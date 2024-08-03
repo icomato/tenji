@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>
+			点字
+		</title>
+		<meta charset="utf-8">
+		<style>
+		body {
+			font-family:sans-serif;
+		}
+		#tenji_board {
+		}
+		.masu {
+			padding:5px;
+			float:left
+		}
+		</style>
+		<script>
+		function drawTenji(){
+			let tb = document.getElementById("tenji_board");
+			var higragana ="あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもや　ゆ　よらりるれろわ　　　を";
+			let index = higragana.indexof("か");
+			let gyou = Math.trunc(index/5);
+			if (gyou == 1){
+			}
+			elm.innerHTML = "xxx";
+		}
+		</script>
+	</head>
+	<body>
+		<input type="text" />
+		<button onclick="drawTenji()">start</button>
+		<br>
+		<br>
+
+		<div id="tenji_board">
+				<div class="masu">●●<BR>●●<BR>●●</div>
+				<div class="masu">●●<BR>●　<BR>●●</div>
+		</div>
+	</body>
+</html>
